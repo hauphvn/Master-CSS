@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.container-item{
+    display:flex;
+    width: 300px;
+    height: 80px;
+    border-bottom: 1px solid #dddddd;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.container-item .order{
+    font-size: 20px;
+    padding: 0 8px;
+}
+
+.container-item .info{
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.container-item .nameSinger{
+    color: #bbbbbb;
+    font-size: 12px;
+}
+
+.container-item .nameSong{
+    margin-bottom: 5px;
+    ;
+}
+
+.container-item .listen{
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.container-item:hover{
+    background-color: #eeeeee;
+}
+
+/*code image trending*/
+.trending{
+    background-image: url(../imgs/trending.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000000;
+
+}
+
+.trending .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.3477766106442577) 0%, rgba(255,255,255,1) 100%);
+    padding: 0 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.trending span{
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    padding-bottom: 4px;
+}
+/*end code image trending*/
+
+/*code album square*/
+.album-square{
+    width: 200px;
+    height: 200px;
+    background-image: url(../imgs/trending.jpg);
+    font-size: 40px;
+}
+
+.album-square .overlay-square{
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.4362745098039216) 32%, rgba(255,255,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.album-square:hover .overlay-square{
+    opacity: 1;
+}
+/*end code album square*/
+
+
